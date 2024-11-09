@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Keywords Meta Tag (not widely used anymore) -->
+    <meta name="keywords"
+        content="Data Structures,Algorithms,Python,Java,JavaScript,SQL,Data Science,PHP,Web Development,System Design,Technical Blogs,Jobs,Coding Contests,HTML,CSS,React,NodeJS,Computer Science,Programming,Amitesh Maurya,Amitesh">
+
+    <!-- Description Meta Tag -->
+    <meta name="description"
+        content="Amitesh Maurya is an experienced Web Developer with expertise in building responsive, scalable websites and web applications. Specializing in front-end and back-end technologies, he delivers high-quality, user-centric solutions tailored to meet business needs., Amitesh Maurya">
+
+    <!-- titel -->
+    <title>Amitesh Maurya - Web Developer</title>
+    <!-- Alternative: Use .png format -->
+    <link rel="icon" href="images/logo.jpg" type="image/png">
+
+    <!-- JSON-LD Schema Markup -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Amitesh Maurya",
+            "url": "https://amitesh.in",
+            "sameAs": [
+                "https://www.linkedin.com/in/amitesh-maurya",
+                "https://twitter.com/your-profile",
+                "https://github.com/amiteshmaurya9"
+            ],
+            "jobTitle": "Web Developer",
+            "worksFor": {
+                "@type": "Organization",
+                "name": "amitesh.in"
+            },
+            "alumniOf": {
+                "@type": "CollegeOrUniversity",
+                "name": "Veer Bahadur Singh Purvanchal University, Jaunpur, UP, India"
+            },
+            "knowsAbout": ["HTML", "CSS", "JavaScript"],
+            "image": "https://amitesh.in/images/featured1-image.jpg",
+            "description": "Amitesh is a software engineer specializing in web development, AI, and data science. He shares insights, tutorials, and resources to help others grow their technical skills on his blog, amitesh.in."
+        }
+        </script>
+
+    <!-- Author Meta Tag -->
+    <meta name="author" content="Amitesh Maurya">
+
+    <!-- Robots Meta Tag (for search engine indexing) -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Learn Web Development with Amitesh Maurya">
+    <meta property="og:description"
+        content="Discover tutorials and insights on web development, AI, and data science at amitesh.in.">
+    <meta property="og:image" content="https://amitesh.in/images/">
+    <meta property="og:url" content="https://amitesh.in">
+    <meta property="og:type" content="website">
+
+
+    <!-- main css -->
+    <link rel="stylesheet" href="styles.css">
+    <!--  google fonts css  -->
+
+    <!-- remix ican css  -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body cz-shortcut-listen="true" class="dark-theme" style="overflow: auto;">
+    <header>
+        <!-- Navbar: The main navigation bar for the website -->
+        <nav>
+            <div class="navbar">
+                <!-- Logo Section: Displays the site logo -->
+                <div class="logo">
+                    <a href="https://amitesh.in" target="_blank" rel="noopener noreferrer">
+                        <img src="images/logo.jpg" alt="LOGO" height="60" width="60" title="Amitesh Maurya">
+                    </a>
+                </div>
+                <div class="nav1">
+                    <!-- Navbar Items: List of main navigation links -->
+                    <ul id="menu1">
+                        <li><a href="#" class="home">Home</a></li>
+                        <li><a href="#recent">Blogs</a></li>
+                        <!-- Projects Dropdown Menu -->
+                        <li><a href="#">Projects <i class="ri-arrow-down-s-line"></i></a>
+                            <!-- Dropdown Content for Projects -->
+
+                            <div class="dropdown1">
+                                <ul>
+                                    <li><a href="#">Website</a></li>
+                                    <li><a href="#">Home Automation</a></li>
+                                    <li><a href="#">Mini PC </a></li>
+                                    <li><a href="#">Raspberry Pi</a></li>
+
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- Services Dropdown Menu -->
+
+                        <li><a href="#">Services <i class="ri-arrow-down-s-line"></i></a>
+
+                            <div class="dropdown1">
+                                <!-- Dropdown Content for Services -->
+
+                                <ul>
+                                    <li><a href="#">Web Development</a></li>
+                                    <li><a href="#">Python</a></li>
+                                    <li><a href="#">C/C++</a></li>
+                                    <li><a href="#">Raspberry Pi</a></li>
+
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#">Contact Us</a></li>
+
+                    </ul>
+                </div>
+                <!-- Search Bar: Provides search functionality in the navbar -->
+                <div class="search-bar">
+                    <!-- Text input for search query -->
+                    <input type="text" placeholder="Search..." aria-label="Search" title="Search">
+                    <!-- Search Button: Initiates the search -->
+                    <button id="search-icon" type="submit" aria-label="Search" title="Search"><i
+                            class="ri-search-line"></i>
+                    </button>
+
+                </div>
+                <!-- Mobile Menu Icons: These icons allow the user to open/close the mobile menu -->
+                <div class="icon-1">
+                    <!-- Menu Icon (mobile view): Displays the menu when clicked -->
+                    <i class="ri-menu-fill" onclick="openMenu()" id="menu2"></i>
+                    <!-- Close Icon (mobile view): Closes the menu when clicked -->
+                    <i class="ri-close-large-line" onclick="closeMenu()" id="close"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- dark mode  -->
+    <!-- Dark Mode Switch Section -->
+    <div class="darkmode-switch">
+        <!-- Label for 'Light' mode -->
+        <span>LIGHT</span>
+
+        <!-- Toggle Switch for Dark Mode -->
+        <label class="switch">
+            <!-- Checkbox input: controls whether dark mode is enabled or not -->
+            <input type="checkbox" name="toggle-darkmode" id="darkmode-toggle" checked>
+
+            <!-- The actual switch UI (the design for the toggle switch) -->
+            <div>
+            </div>
+        </label>
+
+        <!-- Label for 'Dark' mode -->
+        <span>DARK</span>
+    </div>
+    <main>
+        <section class="firstsection">
+
+            <!-- Main section containing two columns: left section with text and right section with an image -->
+            <div class="grid-container">
+                <!-- Left section with introduction and buttons -->
+                <div class="leftsection">
+                    <!-- Introduction text -->
+                    <div class="intro">
+                        <!-- Main introductory text with a highlighted name using class "color1" -->
+
+                        Hi, I'm <span class="color1">Amitesh Maurya</span>
+
+                        <div> and I am a passionate </div>
+                        <!-- Dynamic text that will be inserted by JavaScript (e.g., typing animation) -->
+                        <span id="element"></span>
+                    </div>
+                    <!-- Action buttons for visiting LinkedIn and Github -->
+                    <div class="buttons">
+
+
+                        <a href="#" class="btn" target="_blank" rel="noopener noreferrer">
+                            Visit LinkedIn
+                        </a>
+                        <a href="#" class="btn" target="_blank" rel="noopener noreferrer">
+                            Visit Github
+                        </a>
+                    </div>
+                </div>
+                <!-- Right section with an image -->
+                <div class="rightsection">
+                    <img src="images/test.png" alt="Image">
+                </div>
+            </div>
+        </section>
+        <article>
+
+            <section class="section recent-post" id="recent" aria-labelledby="recent-label">
+                <div class="section2">
+                    <div class="container">
+
+                        <div class="post-main">
+
+                            <h2 class="headline headline-2 section-title">
+                                <span class="span1">Latest Blog Post</span>
+                            </h2>
+
+
+
+                            <ul class="grid-list">
+
+                                <li>
+                                    <div class="recent-post-card">
+
+                                        <figure class="card-banner img-holder" style="--width: 271; --height: 258;">
+                                            <img src="images/html a.jpg" width="271" height="258" loading="lazy"
+                                                alt="Helpful Tips for Working from Home as a Freelancer"
+                                                class="img-cover">
+                                        </figure>
+
+                                        <div class="card-content">
+
+                                            <a href="#" class="card-badge">HTML</a>
+
+                                            <h3 class="headline headline-3 card-title">
+                                                <a href="#" class="link hover-2">HTML < a>Tag</a>
+                                            </h3>
+
+                                            <p class="card-text">
+                                                The < a> tag defines a hyperlink, which is used to link from one page to
+                                                    another.
+
+                                                    The most important attribute of the < a> element is the href
+                                                        attribute, which indicates the link's destination
+                                            </p>
+
+                                            <div class="card-wrapper">
+                                                <div class="card-tag">
+                                                    <a href="#" class="span hover-2"># HTML</a>
+
+                                                    <a href="#" class="span hover-2"># CSS</a>
+                                                </div>
+
+                                                <div class="wrapper">
+                                                    <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                                                    <span class="span">3 mins read</span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="recent-post-card">
+
+                                        <figure class="card-banner img-holder" style="--width: 271; --height: 258;">
+                                            <img src="images/html1.png" width="271" height="258" loading="lazy"
+                                                alt="Helpful Tips for Working from Home as a Freelancer"
+                                                class="img-cover">
+                                        </figure>
+
+                                        <div class="card-content">
+
+                                            <a href="#" class="card-badge">HTML</a>
+
+                                            <h3 class="headline headline-3 card-title">
+                                                <a href="#" class="link hover-2">HTML < article> Tag</a>
+                                            </h3>
+
+                                            <p class="card-text">
+                                                The
+                                                < article> tag specifies independent, self-contained content.
+
+                                                    An article should make sense on its own and it should be possible to
+                                                    distribute it independently from the rest of the site.
+                                            </p>
+
+                                            <div class="card-wrapper">
+                                                <div class="card-tag">
+                                                    <a href="#" class="span hover-2"># HTML</a>
+
+                                                    <a href="#" class="span hover-2"># CSS</a>
+                                                </div>
+
+                                                <div class="wrapper">
+                                                    <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                                                    <span class="span">3 mins read</span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="recent-post-card">
+
+                                        <figure class="card-banner img-holder" style="--width: 271; --height: 258;">
+                                            <img src="images/html2.png" width="271" height="258" loading="lazy"
+                                                alt="Helpful Tips for Working from Home as a Freelancer"
+                                                class="img-cover">
+                                        </figure>
+
+                                        <div class="card-content">
+
+                                            <a href="#" class="card-badge">HTML</a>
+
+                                            <h3 class="headline headline-3 card-title">
+                                                <a href="#" class="link hover-2">HTML < img> Tag</a>
+                                            </h3>
+
+                                            <p class="card-text">
+                                                The < img> tag is used to embed an image in an HTML page.
+
+                                                    Images are not technically inserted into a web page; images are
+                                                    linked to web pages. The < img> tag creates a holding space for the
+                                                        referenced image.
+
+
+                                            </p>
+
+                                            <div class="card-wrapper">
+                                                <div class="card-tag">
+                                                    <a href="#" class="span hover-2"># HTML</a>
+
+                                                    <a href="#" class="span hover-2"># CSS</a>
+                                                </div>
+
+                                                <div class="wrapper">
+                                                    <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                                                    <span class="span">3 mins read</span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="recent-post-card">
+
+                                        <figure class="card-banner img-holder" style="--width: 271; --height: 258;">
+                                            <img src="images/css.jpg" width="271" height="258" loading="lazy"
+                                                alt="Helpful Tips for Working from Home as a Freelancer"
+                                                class="img-cover">
+                                        </figure>
+
+                                        <div class="card-content">
+
+                                            <a href="#" class="card-badge">CSS</a>
+
+                                            <h3 class="headline headline-3 card-title">
+                                                <a href="#" class="link hover-2">CSS align-content Property</a>
+                                            </h3>
+
+                                            <p class="card-text">
+                                                The align-content property specifies how flex lines are distributed
+                                                along the cross axis in a flexbox container.
+
+                                                In flexbox layout, the main axis is in the flex-direction (default is
+                                                'row', horizontal), and the cross axis is perpendicular to the main axis
+                                                (default is 'column', vertical).
+                                            </p>
+
+                                            <div class="card-wrapper">
+                                                <div class="card-tag">
+                                                    <a href="#" class="span hover-2"># HTML</a>
+
+                                                    <a href="#" class="span hover-2"># CSS</a>
+                                                </div>
+
+                                                <div class="wrapper">
+                                                    <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                                                    <span class="span">3 mins read</span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="recent-post-card">
+
+                                        <figure class="card-banner img-holder" style="--width: 271; --height: 258;">
+                                            <img src="images/js01.png" width="271" height="258" loading="lazy"
+                                                alt="Helpful Tips for Working from Home as a Freelancer"
+                                                class="img-cover">
+                                        </figure>
+
+                                        <div class="card-content">
+
+                                            <a href="#" class="card-badge">JavaScript</a>
+
+                                            <h3 class="headline headline-3 card-title">
+                                                <a href="#" class="link hover-2">JavaScript - HTML DOM Methods
+                                                </a>
+                                            </h3>
+
+                                            <p class="card-text">
+                                                The HTML DOM can be accessed with JavaScript (and with other programming
+                                                languages).
+                                                In the DOM, all HTML elements are defined as objects.
+                                                A property is a value that you can get or set (like changing the content
+                                                of an HTML element).
+
+                                                A method is an action you can do (like add or deleting an HTML element).
+                                            </p>
+
+                                            <div class="card-wrapper">
+                                                <div class="card-tag">
+                                                    <a href="#" class="span hover-2"># JavaScript</a>
+
+                                                    <a href="#" class="span hover-2"># HTML</a>
+                                                </div>
+
+                                                <div class="wrapper">
+                                                    <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                                                    <span class="span">3 mins read</span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </li>
+
+                            </ul>
+
+                            <nav aria-label="pagination" class="pagination">
+
+                                <a href="#" class="pagination-btn" aria-label="previous page">
+                                    <ion-icon name="arrow-back" aria-hidden="true"></ion-icon>
+                                </a>
+
+                                <a href="#" class="pagination-btn">1</a>
+                                <a href="#" class="pagination-btn">2</a>
+                                <a href="#" class="pagination-btn">3</a>
+                                <a href="#" class="pagination-btn" aria-label="more page">...</a>
+
+                                <a href="#" class="pagination-btn" aria-label="next page">
+                                    <ion-icon name="arrow-forward" aria-hidden="true">8</ion-icon>
+                                </a>
+
+                            </nav>
+
+                        </div>
+
+                        <div class="post-aside grid-list">
+
+                            <div class="card aside-card">
+
+                                <h3 class="headline headline-2 aside-title">
+                                    <span class="span">Popular Posts</span>
+                                </h3>
+
+                                <ul class="popular-list">
+
+                                    <li>
+                                        <div class="popular-card">
+
+                                            <figure class="card-banner img-holder" style="--width: 64; --height: 64;">
+                                                <img src="images/html a.jpg" width="64" height="64" loading="lazy"
+                                                    alt="Creating is a privilege but it’s also a gift"
+                                                    class="img-cover">
+                                            </figure>
+
+                                            <div class="card-content">
+
+                                                <h4 class="headline headline-4 card-title">
+                                                    <a href="#" class="link hover-2">HTML < article> Tag</a>
+                                                </h4>
+
+                                                <div class="warpper">
+                                                    <p class="card-subtitle">3 mins read</p>
+
+                                                    <time class="publish-date" datetime="2024-10-20">20 Oct 2024</time>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="popular-card">
+
+                                            <figure class="card-banner img-holder" style="--width: 64; --height: 64;">
+                                                <img src="images/html a tag.jpg" width="64" height="64" loading="lazy"
+                                                    alt="Being unique is better than being perfect" class="img-cover">
+                                            </figure>
+
+                                            <div class="card-content">
+
+                                                <h4 class="headline headline-4 card-title">
+                                                    <a href="#" class="link hover-2">HTML Images Syntax
+                                                    </a>
+                                                </h4>
+
+                                                <div class="warpper">
+                                                    <p class="card-subtitle">3 mins read</p>
+
+                                                    <time class="publish-date" datetime="2024-10-20">20 Oct 2024</time>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="popular-card">
+
+                                            <figure class="card-banner img-holder" style="--width: 64; --height: 64;">
+                                                <img src="images/js01.png" width="64" height="64" loading="lazy"
+                                                    alt="Every day, in every city and town across the country"
+                                                    class="img-cover">
+                                            </figure>
+
+                                            <div class="card-content">
+
+                                                <h4 class="headline headline-4 card-title">
+                                                    <a href="#" class="link hover-2">JavaScript - HTML DOM Methods
+                                                    </a>
+                                                </h4>
+
+                                                <div class="warpper">
+                                                    <p class="card-subtitle">3 mins read</p>
+
+                                                    <time class="publish-date" datetime="2024-10-20">20 Oct 2024</time>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="popular-card">
+
+                                            <figure class="card-banner img-holder" style="--width: 64; --height: 64;">
+                                                <img src="images/css.jpg" width="64" height="64" loading="lazy"
+                                                    alt="Every day, in every city and town across the country"
+                                                    class="img-cover">
+                                            </figure>
+
+                                            <div class="card-content">
+
+                                                <h4 class="headline headline-4 card-title">
+                                                    <a href="#" class="link hover-2">CSS align-content Property</a>
+                                                </h4>
+
+                                                <div class="warpper">
+                                                    <p class="card-subtitle">3 mins read</p>
+
+                                                    <time class="publish-date" datetime="2024-10-20">20 Oct 2024</time>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="popular-card">
+
+                                            <figure class="card-banner img-holder" style="--width: 64; --height: 64;">
+                                                <img src="images/html a.jpg" width="64" height="64" loading="lazy"
+                                                    alt="Every day, in every city and town across the country"
+                                                    class="img-cover">
+                                            </figure>
+
+                                            <div class="card-content">
+
+                                                <h4 class="headline headline-4 card-title">
+                                                    <a href="#" class="link hover-2">HTML Links - Hyperlinks
+                                                    </a>
+                                                </h4>
+
+                                                <div class="warpper">
+                                                    <p class="card-subtitle">3 mins read</p>
+
+                                                    <time class="publish-date" datetime="2024-10-20">20 Oct 2024</time>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="popular-card">
+
+                                            <figure class="card-banner img-holder" style="--width: 64; --height: 64;">
+                                                <img src="images/css1.png" width="64" height="64" loading="lazy"
+                                                    alt="Your voice, your mind, your story, your vision"
+                                                    class="img-cover">
+                                            </figure>
+
+                                            <div class="card-content">
+
+                                                <h4 class="headline headline-4 card-title">
+                                                    <a href="#" class="link hover-2">CSS Color Names
+                                                    </a>
+                                                </h4>
+
+                                                <div class="warpper">
+                                                    <p class="card-subtitle">3 mins read</p>
+
+                                                    <time class="publish-date" datetime="2024-10-20">20 Oct 2024</time>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="popular-card">
+
+                                            <figure class="card-banner img-holder" style="--width: 64; --height: 64;">
+                                                <img src="images/html1.png" width="64" height="64" loading="lazy"
+                                                    alt="Being unique is better than being perfect" class="img-cover">
+                                            </figure>
+
+                                            <div class="card-content">
+
+                                                <h4 class="headline headline-4 card-title">
+                                                    <a href="#" class="link hover-2"> CSS - Margin - Shorthand Property
+                                                    </a>
+                                                </h4>
+
+                                                <div class="warpper">
+                                                    <p class="card-subtitle">3 mins read</p>
+
+                                                    <time class="publish-date" datetime="2024-10-20">20 Oct 2024</time>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                            <div class="card aside-card">
+
+                                <h3 class="headline headline-2 aside-title">
+                                    <span class="span">Last Comment</span>
+                                </h3>
+
+                                <ul class="comment-list">
+
+                                    <li>
+                                        <div class="comment-card">
+
+                                            <blockquote class="card-text">
+                                                “ Gosh jaguar ostrich quail one excited dear hello and bound and the and
+                                                bland moral misheard
+                                                roadrunner “
+                                            </blockquote>
+
+                                            <div class="profile-card">
+                                                <figure class="profile-banner img-holder">
+                                                    <img src="images/author-6.png" width="32" height="32" loading="lazy"
+                                                        alt="Shubham Yadav">
+                                                </figure>
+
+                                                <div>
+                                                    <p class="card-title">Shubham Yadav</p>
+
+                                                    <time class="card-date" datetime="2024-11-10">10 Nov 2024</time>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="comment-card">
+
+                                            <blockquote class="card-text">
+                                                “ Gosh jaguar ostrich quail one excited dear hello and bound and the and
+                                                bland moral misheard
+                                                roadrunner “
+                                            </blockquote>
+
+                                            <div class="profile-card">
+                                                <figure class="profile-banner img-holder">
+                                                    <img src="images/author-7.png" width="32" height="32" loading="lazy"
+                                                        alt="Ankur Maurya">
+                                                </figure>
+
+                                                <div>
+                                                    <p class="card-title">Ankur Maurya </p>
+
+                                                    <time class="card-date" datetime="2024-11-10">10 Nov 2024</time>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="comment-card">
+
+                                            <blockquote class="card-text">
+                                                “ Gosh jaguar ostrich quail one excited dear hello and bound and the and
+                                                bland moral misheard
+                                                roadrunner “
+                                            </blockquote>
+
+                                            <div class="profile-card">
+                                                <figure class="profile-banner img-holder">
+                                                    <img src="images/author-8.png" width="32" height="32" loading="lazy"
+                                                        alt="Adarsh Panday">
+                                                </figure>
+
+                                                <div>
+                                                    <p class="card-title">Adarsh Pandey</p>
+
+                                                    <time class="card-date" datetime="2024-11-10">10 Nov 2024</time>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+        </article>
+    </main>
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer>
+        <div class="container-footer">
+
+            <div class="card1 footer">
+
+                <div class="section footer-top">
+
+                    <div class="footer-brand">
+
+                        <a href="https://amitesh.in" class="logo">
+                            <img src="images/logo.jpg" width="119" height="37" loading="lazy" alt="Amitesh Maurya" title="Amitesh Maurya">
+                        </a>
+
+
+                        <p class="footer-text">
+                            I’m Amitesh Maurya, a Web Developer specializing in creating responsive, user-friendly
+                            websites. With expertise in both front-end and back-end technologies.
+                        </p>
+
+                        <p class="footer-list-title">Address</p>
+
+                        <address class="footer-text address">
+                            Noida <br>
+                            Uttar pradesh , India
+                        </address>
+
+                    </div>
+
+                    <div class="footer-list">
+
+                        <p class="footer-list-title">Categories</p>
+
+                        <ul>
+
+                            <li>
+                                <a href="#" class="footer-link hover-2">Action</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer-link hover-2">Business</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer-link hover-2">Adventure</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer-link hover-2">India</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer-link hover-2">America</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer-link hover-2">Animal</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer-link hover-2">HTML</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer-link hover-2">CSS</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer-link hover-2">Raspberry Pi</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer-link hover-2"> Web Design</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer-link hover-2">JavaScript</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer-link hover-2">Linux</a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                    <div class="footer-list">
+
+                        <p class="footer-list-title">Newsletter</p>
+
+                        <p class="footer-text">
+                            Sign up to be first to receive the latest stories inspiring us, case studies, and industry
+                            news.
+                        </p>
+
+                        <div class="input-wrapper">
+                            <input type="text" name="name" placeholder="Your name" required class="input-field"
+                                autocomplete="off">
+
+                            <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+                        </div>
+
+                        <div class="input-wrapper">
+                            <input type="email" name="email_address" placeholder="Emaill address" required
+                                class="input-field" autocomplete="off">
+
+                            <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+                        </div>
+
+                        <a href="#" class="btn btn-primary">
+                            <span class="span">Subscribe</span>
+
+                            <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="footer-bottom">
+
+                    <p class="copyright">Copyright
+                        &copy; 2024 Developed by <a href="#" class="copyright-link">Amitesh Maurya </a> | All Rights
+                        Reserved
+                    </p>
+
+                    <ul class="social-list">
+
+                        <li>
+                            <a href="#" class="social-link">
+                                <ion-icon name="logo-twitter"></ion-icon>
+
+                                <span class="span">Twitter</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="social-link">
+                                <ion-icon name="logo-linkedin"></ion-icon>
+
+                                <span class="span">LinkedIn</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="social-link">
+                                <ion-icon name="logo-instagram"></ion-icon>
+
+                                <span class="span">GitHub</span>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

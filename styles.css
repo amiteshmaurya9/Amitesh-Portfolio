@@ -1,0 +1,1055 @@
+:root {
+
+    /** Background colors */
+
+    --body-color: #f9f9f9;
+    --primary-color: #367BF0;
+    --dark-body-color: #000034;
+    --dark-light-color: #292929;
+    --color-blue: #19c0ea;
+    --dark-white-color: #16171d;
+    --white-color: #ffffff;
+    --font-family: Noto Sans;
+    --light-color: #3700B3;
+
+    /** Text colors */
+
+    --text-color: #110f0f;
+    --text-color-dark: #242738;
+    --dark-text-color: #d2d0d0;
+    --dark-text-color-dark: white;
+    --text-carolina-blue: hsla(199, 89%, 49%, 1);
+
+}
+
+/* Universal selector to remove margin and padding, and to set box-sizing to border-box for all elements */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Remove default list style from <li> elements */
+li {
+    list-style: none;
+}
+
+/* Links styling: inherit color and remove underlines */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Dark theme styling */
+
+body.dark-theme {
+    --body-color: var(--dark-body-color);
+    --text-color: var(--dark-text-color);
+    --text-color-dark: var(--dark-text-color-dark);
+    --white-color: var(--dark-white-color);
+    --light-color: var(--dark-light-color);
+}
+
+/* Basic body styling */
+body {
+    background-color: var(--light-body-color);
+    color: var(--light-text-color);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    transition: background-color 0.3s, color 0.3s;
+    /* Smooth transition for theme changes */
+    overflow-y: overlay;
+    /* Prevent vertical scrollbars */
+
+}
+
+/* Specific styling for html and body to reset some properties */
+html,
+body {
+    background-color: var(--body-color);
+    color: var(--text-color);
+    font-family: 'poppins', sans-serif;
+    line-height: 1.5;
+
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    height: 100%;
+}
+
+/* Header section styling */
+header {
+    width: 100%;
+    background-color: #27282C;
+
+
+}
+
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    height: 70px;
+    max-width: 1400px;
+    margin: auto;
+    justify-content: space-between;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    align-items: center;
+
+}
+
+/* Logo styling */
+.logo img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+
+}
+
+/* Navbar links styling */
+.nav1 ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+
+}
+
+/* Individual list item in navbar */
+.nav1 ul li {
+    font-size: 1.1em;
+    position: relative;
+    padding: 5px 10px;
+
+
+}
+
+/* Navbar link styling */
+.nav1 ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+
+}
+
+/* Navbar item hover effect */
+.nav1 ul li:hover {
+    background-color: blue;
+    padding: 5px 10px;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+
+
+
+
+}
+
+/* Dropdown menu visibility on hover */
+.nav1 ul li:hover .dropdown1 {
+    display: block;
+
+}
+
+/* Dropdown menu styling */
+.dropdown1 {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    background-color: #27282C;
+    border-radius: 4px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    min-width: 200px;
+    z-index: 1;
+    font-size: .8rem;
+    transition: all 0.3s ease;
+
+
+
+}
+
+/* Dropdown list styling */
+.dropdown1 ul {
+    margin: 0;
+    padding: 0;
+    display: block;
+    /* padding: 10px; */
+    text-decoration: none;
+
+}
+
+.nav1 i {
+    font-size: 22px;
+    /* padding-top: 5px; */
+}
+
+
+
+/* Search bar styling */
+.search-bar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: auto;
+    height: 40px;
+    width: 250px;
+    border-radius: 24px;
+    border: 1px solid;
+    padding: 0px;
+    padding-left: 10px;
+
+    background-color: #27282C;
+    border-color: white
+}
+
+/* Search bar input styling */
+.search-bar input {
+    width: 100%;
+    border: none;
+    padding: 7px;
+    font-size: 14px;
+    background-color: #27282C;
+    color: white
+}
+
+/* Remove outline when search input is focused */
+.search-bar input:focus {
+    outline: none;
+
+}
+
+/* Search button styling */
+#search-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: none;
+    padding: 16px;
+    cursor: pointer;
+    height: 100%;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+
+    border-left: 1px solid white;
+}
+
+/* Hover effect for search button */
+#search-icon:hover {
+    background-color: #3336FF;
+    color: white;
+}
+
+/* Button styling inside search bar */
+.search-bar button {
+    float: right;
+    border: none;
+    background: none;
+    outline: none;
+    width: 50px;
+    height: 35px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    background-color: #27282C;
+    color: white
+}
+
+/* Icon styling inside the search bar */
+.search-bar button i {
+    font-size: large;
+
+}
+
+/* Search icon inside the search bar */
+.search-bar i {
+    font-size: 25px;
+    margin: 15px;
+}
+
+/* Mobile icn (menu) for responsive design */
+
+.icon-1 {
+    color: white;
+    font-size: 24px;
+    display: none;
+}
+
+
+
+
+/* dark mode  */
+#posts .darkmode-switch {
+    padding: 30px 0;
+}
+
+/* Style for the dark mode switch container */
+.darkmode-switch {
+    font-size: 10px;
+    letter-spacing: .2em;
+    text-align: center;
+    padding-top: 20px;
+    /* padding-bottom: 30px; */
+
+}
+
+.darkmode-switch span {
+    margin: 0 0px;
+}
+
+.darkmode-switch .switch {
+    vertical-align: bottom;
+    margin: -10px 10px;
+}
+
+/* Label for switch, which acts as a button */
+.switch {
+    height: 2.5em;
+    width: 4em;
+    padding: 0;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 12px;
+    text-align: end;
+}
+
+/* Hide the default checkbox appearance */
+.switch input {
+    display: none;
+
+}
+
+/* Styling the switch container (the part that moves) */
+.switch div {
+    background-color: var(--primary-color);
+    border-radius: 34px;
+    position: relative;
+    transition: background-color 0.3s;
+}
+
+/* Position the circle when checked */
+.switch input:checked+div::before {
+    transform: translateX(2em);
+
+    /* Adjust this as needed */
+}
+
+/* The circle inside the switch */
+.switch input+div::before {
+    content: '';
+    display: block;
+    height: 1.9em;
+    width: 1.9em;
+    border-radius: 100%;
+    background: #fff;
+    transform: translateX(0);
+    transition: transform .2s;
+}
+
+/* main  First section*/
+/* Style for text in the left section of the first section */
+.left {
+    font-size: 1.5rem;
+
+}
+
+/* The first section container styling */
+.firstsection {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    align-items: center;
+    max-width: 1400px;
+    margin: auto;
+
+}
+
+/* Ensures each div inside the firstsection takes up 100% width */
+.firstsection>div {
+    width: 100%;
+}
+
+/* Styling for the left section of the first section */
+.leftsection {
+    font-size: 2.5rem;
+    margin: auto;
+}
+
+/* Styling for buttons in the left section */
+.leftsection .buttons {
+    padding: 35px 10px;
+    display: flex;
+}
+
+/* Button styling */
+.leftsection .btn {
+    padding: 12px;
+    background: rgb(11, 11, 97);
+    color: white;
+    border: 1px solid white;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 5px;
+}
+
+/* Hover effect for the button: background color change */
+.buttons .btn:hover {
+    background-color: blue;
+}
+
+/* Styling for the right section (image) */
+.rightsection {
+    height: 400px;
+    width: 400px;
+    margin: auto;
+
+}
+
+/* Image inside the right section */
+.rightsection img {
+    width: 80%;
+    margin-top: 50px;
+    height: 80%;
+
+}
+
+.color1 {
+    color: #05EEFF;
+}
+
+.text-gray {
+    color: #05EEFF;
+}
+
+/* Styling for the typewriter effect element */
+#element {
+    color: #3fff00;
+}
+
+/* Styling for the second section */
+.secondsection {
+    max-width: 80vw;
+    margin: auto;
+    height: 80vh;
+}
+
+/*............. grid container ......... */
+/* Grid layout for the container */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center;
+    gap: 50px;
+}
+
+/* --- Typewriter and Blinking Cursor Effect --- */
+
+/* Styling for the typewriter effect element */
+#element {
+    font-size: 2.5rem;
+    font-family: Arial, sans-serif;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid black;
+    display: inline-block;
+    animation: blink-cursor 0.75s step-end infinite;
+}
+
+/* Keyframes for the cursor blinking animation */
+@keyframes blink-cursor {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: black
+    }
+}
+
+/* Blinking cursor animation styling */
+#element::after {
+    content: '|';
+    display: inline-block;
+    margin-left: 5px;
+    opacity: 1;
+    animation: blink 0.7s steps(2) infinite;
+}
+
+/* Keyframes for the blinking cursor effect */
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+
+/*-----------------------------------*\
+  #RECENT POST
+\*-----------------------------------*/
+/* Container for the entire section */
+.container {
+    padding-inline: 20px;
+    /* Horizontal padding */
+    margin: auto;
+    /* Center the container */
+    max-width: 1400px;
+    /* Maximum width of the container */
+}
+
+/* Headline styles for h2 and h3 elements */
+
+.headline-2 {
+    font-size: 2.5rem;
+    padding-bottom: 40px;
+}
+.span1{
+    color: #05EEFF;
+
+}
+
+.headline-3 {
+    font-size: 1.8rem;
+    line-height: 1.5;
+}
+
+/* Card styling for recent posts */
+.card {
+    background-color: var(--body-color);
+
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+}
+
+/* Image container settings for aspect ratio */
+.img-holder {
+    aspect-ratio: var(--width) / var(--height);
+    background-color: var(--body-color);
+    overflow: hidden;
+}
+
+/* Image inside the card - cover style */
+.img-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* Grid list to display multiple items */
+.grid-list {
+    display: grid;
+    gap: 20px;
+}
+
+/* Card wrapper layout */
+.card-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    font-size: 1.4rem;
+    margin-block: 20px;
+}
+
+/* Card tags and wrapper layout */
+.card-wrapper :is(.card-tag, .wrapper) {
+    display: flex;
+    gap: 3px;
+    align-items: center;
+}
+
+/* Text styling for sections */
+.section-text {
+    font-size: .8rem;
+    margin-block-end: 30px;
+}
+
+/* Section padding */
+.section {
+    padding-block: 20px;
+}
+
+/* Section title styles */
+.section-title {
+    margin-block-end: 10px;
+}
+
+/* Headline styles */
+.headline {
+    color: var(--text-color);
+
+    line-height: 1.3;
+}
+
+.headline-2 {
+    font-size: 2rem;
+}
+
+
+/* Recent post specific container */
+.recent-post .container {
+    display: grid;
+    gap: 50px;
+}
+
+/* Styling for the recent post card */
+.recent-post-card {
+    display: grid;
+    gap: 30px;
+}
+
+.recent-post-card .card-banner {
+    border-radius: 16px;
+    transition: .25s ease;
+}
+
+/* Hover/focus effect on card banner */
+.recent-post-card:is(:hover, :focus-within) .card-banner {
+    transform: translateY(-2px);
+}
+
+.recent-post-card .card-text {
+    color: var(--text-color);
+    font-size: 1.4em;
+    line-height: 1.3;
+}
+
+/* Badge styling on card */
+.recent-post-card .card-badge {
+    background-color: rgb(62, 62, 62);
+    max-width: max-content;
+    color: rgb(238, 227, 227);
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding: 4px 15px;
+    border-radius: 200px;
+    transition: .25s ease;
+}
+
+/* Hover/focus effect on badge and pagination buttons */
+.recent-post-card .card-badge:is(:hover, :focus-visible),
+.pagination-btn:is(:hover, :focus-visible) {
+    transform: translateY(-2px);
+    background-color: rgb(16, 57, 206);
+
+}
+
+.recent-post-card .card-title {
+    margin-block: 15px 20px;
+}
+
+.recent-post-card .card-tag {
+    gap: 15px;
+    color: hsla(217, 17%, 48%, 1);
+
+}
+
+/* Icon size for card wrapper */
+.recent-post-card .card-wrapper ion-icon {
+    font-size: 1.8rem;
+    --ionicon-stroke-width: 40px;
+}
+
+/* Pagination button styling */
+.pagination-btn {
+    background-color: var(--color-blue);
+
+    color: var(--text-color);
+    font: weight 700px;
+    line-height: 1;
+    width: 35px;
+    height: 35px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    transition: .25s ease;
+}
+
+/* Pagination container styling */
+.pagination {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    margin-block-start: 60px;
+}
+
+.aside-card {
+    padding: 25px;
+    border-radius: 16px;
+}
+
+.aside-title {
+    margin-block-end: 40px;
+}
+
+/* Aside title underline styling */
+.aside-title .span {
+    position: relative;
+}
+
+.aside-title .span::after {
+    content: "";
+    display: block;
+    width: 96px;
+    height: 3px;
+    background-color: var(--body-color);
+
+    margin-block-start: 10px;
+}
+
+/* Popular card layout */
+.popular-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-block-start: 20px;
+}
+
+.popular-card .card-banner {
+    width: 54px;
+    flex-shrink: 0;
+    border-radius: 50%;
+}
+
+/* Styling for popular list items */
+.popular-list>li:not(:last-child) .card-content {
+    border-block-end: 1px solid var(--text-color);
+}
+
+.popular-card .warpper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 10px;
+    font-size: 1.4rem;
+    color: var(--text-color);
+
+    margin-block: 12px 20px;
+}
+
+/* Comment list item styling */
+.comment-list>li:not(:last-child) .comment-card {
+    padding-block-end: 22px;
+    border-block-end: 1px solid var(--text-color);
+
+    margin-block-end: 22px;
+}
+
+/* Comment card text styling */
+.comment-card .card-text {
+    color: var(--text-color);
+    font-size: 1.4rem;
+    line-height: 1.3;
+    margin-block-end: 20px;
+}
+
+.comment-card .profile-card {
+    color: var(--text-color);
+
+    font-size: 1.4rem;
+}
+
+.comment-card .card-date {
+    font-size: 1.2rem;
+}
+
+
+
+
+
+/*-----------------------------------*\
+  #FOOTER
+\*-----------------------------------*/
+.card1 {
+    background-color: #000000;
+    /* border: 1px solid rgb(246, 241, 241); */
+
+}
+
+/* Footer container */
+.footer {
+    padding-inline: 20px;
+    color: white;
+    display: block;
+}
+
+/* Footer top layout */
+.footer-top {
+    display: grid;
+    gap: 20px;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.footer-brand .footer-text {
+    font-size: 1.4rem;
+}
+
+.footer-text:not(.address) {
+    margin-block: 20px;
+}
+
+.footer-brand .footer-list-title {
+    margin-block-end: 2px;
+}
+
+.footer-list-title {
+    color: rgb(17, 207, 221);
+    font-size: 1.8rem;
+    margin-block-end: 30px;
+}
+
+/* Footer list layout */
+.footer-list ul {
+    columns: 2;
+}
+
+.footer-link {
+    margin-block-end: 12px;
+}
+
+.footer .input-wrapper {
+    position: relative;
+    margin-block-end: 24px;
+}
+
+/* Input field wrapper */
+.footer .input-field {
+    padding: 12px;
+    padding-inline-start: 20px;
+    border-block-end: 1px solid rgb(182, 183, 189);
+    font-size: 1.4rem;
+    background-color: #000000;
+    color: white;
+
+}
+
+.footer .input-field::-webkit-input-placeholder {
+    color: inherit;
+    opacity: 0.5;
+
+}
+
+/* Icon styling within input wrapper */
+.footer .input-wrapper ion-icon {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    --ionicon-stroke-width: 40px;
+}
+
+.footer-bottom {
+    border-block-start: 1px solid #0bd1d1;
+    padding-block: 50px;
+}
+
+.btn-primary {
+    padding: 8px 16px;
+    border-radius: 6px;
+}
+
+/* General button styling */
+.btn {
+    background-image: linear-gradient(90deg, #0ea5ea, #0bd1d1 51%, #0ea5ea);
+    background-size: 200%;
+    background-position: left;
+    color: rgb(244, 239, 239);
+    font-size: 1.4rem;
+    font-weight: 700;
+    max-width: max-content;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    transition: 0.25s ease;
+}
+
+/* Links inherit default colors, no underline */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.copyright {
+    text-align: center;
+    margin-block-end: 15px;
+}
+
+.copyright-link {
+    display: inline-block;
+    font-style: italic;
+}
+
+/* Hover/focus effect on copyright link */
+.copyright-link:is(:hover, :focus-visible) {
+    color: blue;
+    transform: translateY(-2px);
+}
+
+.social-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: 0.25s ease;
+}
+
+/* Hover/focus effect on social links */
+.social-link:is(:hover, :focus-visible) {
+    color: blue;
+    transform: translateY(-2px);
+}
+
+
+
+
+
+
+
+
+/*................ media Query ...............*/
+/* Mobile screens up to 750px wide */
+@media (max-width: 750px) {
+
+
+
+    #menu1 {
+        display: none;
+        background-color: #333;
+        color: #fff;
+        width: 80%;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        text-align: center;
+        height: auto;
+        /* transition: all 0.3s ease; */
+
+
+    }
+
+    #menu1 li {
+        display: block;
+        justify-items: center;
+        /* margin: 10px; */
+    }
+
+    .dropdown1 {
+        position: absolute;
+        top: 100%;
+        left: 60%;
+        background-color: #333;
+        border-radius: 4px;
+        z-index: 1;
+        font-size: .8rem;
+        transition: all 0.3s ease;
+
+    }
+
+    .search-bar {
+        width: 150px;
+    }
+
+    .icon-1 {
+        color: aliceblue;
+        font-size: 24px;
+        display: block;
+        cursor: pointer;
+    }
+
+    #close {
+        display: none;
+    }
+
+    .leftsection .intro {
+        font-size: 2rem;
+    }
+
+
+}
+
+@media (max-width: 920px) {
+    .leftsection .intro {
+        font-size: 2rem;
+    }
+
+
+}
+
+@media (min-width: 1200px) {
+    .footer-top {
+        gap: 40px;
+        padding-inline: 120px;
+    }
+}
+
+
+@media (min-width: 992px) {
+
+    /**
+   * RECENT POST
+   */
+    .recent-post .container {
+        grid-template-columns: 1fr 0.6fr;
+        align-items: flex-start;
+    }
+
+    /* Three-column footer layout */
+    .footer-top {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 768px) {
+
+    /**
+   * RECENT POST
+   */
+
+    .recent-post-card {
+        grid-template-columns: 0.5fr 1fr;
+    }
+}
+
+@media (min-width: 575) {
+    /**
+   * RECENT POST
+   */
+
+    .recent-post-card {
+        grid-template-columns: 0.5fr 1fr;
+        gap: 20px;
+    }
+
+    .pagination-btn {
+        width: 42px;
+        height: 42px;
+    }
+
+
+}
