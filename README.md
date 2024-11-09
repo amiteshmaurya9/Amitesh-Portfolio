@@ -15,19 +15,19 @@ This portfolio website is designed to reflect my work and passion for **Frontend
 
 ## Features
 
-### 1. **Dark Mode Toggle**
+### 1. ** 🌙 Dark Mode Toggle**
 A built-in **dark mode toggle** allows users to switch between light and dark themes for a comfortable browsing experience. This feature enhances visual appeal and readability, ensuring an optimized experience for all users, whether in bright or low-light environments.
 
-### 2. **Interactive Typing Animation**
+### 2. ** ⌨️Interactive Typing Animation**
 The home page features an engaging **typing animation** that introduces my core skills and interests. Phrases such as "Web Developer," "Raspberry Pi," and "IoT Projects" alternate on the screen, showcasing my focus on cutting-edge technology and projects.
 
-### 3. **Recent Posts Section**
+### 3. ** 📝 Recent Posts Section**
 A dynamic **Recent Posts** section displays the latest articles, blog posts, and projects in a grid layout. This area gives visitors an up-to-date view of my work and content, encouraging exploration of my portfolio and technical writings.
 
-### 4. **Custom Footer & Contact Links**
+### 4. ** 📬 Custom Footer & Contact Links**
 The footer is designed with convenience in mind, offering **social media links**, a **newsletter subscription** option, and quick navigation to important sections of the site. This makes it easy for visitors to connect with me professionally and stay updated with my latest work.
 
-## Technologies Used
+## 🛠️ Technologies Used
 
 - **HTML5** & **CSS3**: For structuring and styling the website.
 - **JavaScript**: To power dynamic functionality, including animations and interactivity.
@@ -36,7 +36,9 @@ The footer is designed with convenience in mind, offering **social media links**
 - **Explore it here to see a live example of responsive, user-focused design and innovative tech projects in action.
 
 ## Demo
-Explore the live [website](here) to see the portfolio in action!
+Explore the live website here [**amitesh.in**](https://www.amitesh.in/)
+to see the portfolio in action!
+
 
 ## Getting Started
 
