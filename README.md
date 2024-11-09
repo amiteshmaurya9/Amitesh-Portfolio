@@ -15,7 +15,7 @@ This portfolio website is designed to reflect my work and passion for **Frontend
 
 ## Features
 
-### 1. ** 🌙 Dark Mode Toggle**
+### 1. 🌙**Dark Mode Toggle**
 A built-in **dark mode toggle** allows users to switch between light and dark themes for a comfortable browsing experience. This feature enhances visual appeal and readability, ensuring an optimized experience for all users, whether in bright or low-light environments.
 
 ### 2. ** ⌨️Interactive Typing Animation**
