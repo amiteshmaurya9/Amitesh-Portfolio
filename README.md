@@ -69,7 +69,7 @@ This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) f
 
 You can reach out to me through the following platforms:
 
-- **Email**: [amitesh@domain.com](mailto:amitesh@amitesh.in)
+- **Email**: [amitesh@amitesh.in](mailto:amitesh@amitesh.in)
 - **LinkedIn**: [Amitesh Maurya](https://www.linkedin.com/in/amitesh-maurya)
 - **GitHub**: [Amitesh's GitHub](https://github.com/amiteshmaurya9)
 
