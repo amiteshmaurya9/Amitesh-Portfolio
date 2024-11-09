@@ -46,13 +46,13 @@ To view this portfolio website locally on your machine:
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/amiteshmaurya9/Amitesh-Portfolio
+    git clone https://github.com/amiteshmaurya9/Amitesh-Portfolio.git
     ```
 
 2. Navigate to the project directory:
 
     ```bash
-    cd portfolio
+    cd Amitesh-Portfolio
     ```
 
 3. Open `index.html` in your browser:
