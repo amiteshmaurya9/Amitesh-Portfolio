@@ -36,7 +36,7 @@ The footer is designed with convenience in mind, offering **social media links**
 - **Explore it here to see a live example of responsive, user-focused design and innovative tech projects in action.
 
 ## Demo
-Explore the live website here [**amitesh.in**](https://www.amitesh.in/)
+Explore the live website here [**amiteshmaurya.com**](https://www.amiteshmaurya.com/)
 to see the portfolio in action!
 
 
@@ -69,7 +69,7 @@ This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) f
 
 You can reach out to me through the following platforms:
 
-- **Email**: [amitesh@amitesh.in](mailto:amitesh@amitesh.in)
+- **Email**: []()
 - **LinkedIn**: [Amitesh Maurya](https://www.linkedin.com/in/amitesh-maurya)
 - **GitHub**: [Amitesh's GitHub](https://github.com/amiteshmaurya9)
 
